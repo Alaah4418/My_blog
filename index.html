@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog by Alaa Hosny</title>
+        <meta name="Description" content="This is my first web page"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+            margin:0; padding:0;
+            box-sizing: border-box;
+            outline: none; border:none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+        }   
+        @media (max-width:991px){
+            html{
+                font-size: 55%;
+            }
+            .header{
+                padding:1.5rem 2rem;
+            }
+            section{
+                padding:2rem;
+            }
+
+        }
+        html{
+           font-size: 62.5%;
+           overflow-x: hidden;
+           scroll-padding-top: 9rem;
+           scroll-behavior: smooth;
+        }
+        html::-webkit-scrollbar{
+           width: .8rem;
+        }
+        html::-webkit-scrollbar-track{
+           background: transparent;
+        }
+        html::-webkit-scrollbar-thumb{
+           background: #fff;
+           border-radius: 5rem;
+        }
+        body{
+            background-color:#010103;
+        }
+        section{
+           padding:2rem 7%;
+        }
+        .heading{
+           text-align: center;
+           color:#fff;
+           text-transform: uppercase;
+           padding-bottom: 2rem;
+           font-size: 3rem;
+        }
+        .about .row{
+            background:#13131a;
+            flex-wrap: wrap;
+            padding: 0%;
+            font-size: 1.6rem;
+            color:#ccc;
+            padding:1rem 0;
+            line-height: 1.8;
+        }
+        .about .row{
+            display: flex;
+            align-items: center;
+            background:#13131a;;
+           flex-wrap: wrap;
+        }     
+        .about .row .image{
+            flex:1 1 45rem;
+        }
+        .about .row .image img{
+            width: 100%;
+        }
+        .about .row .content{
+            flex:1 1 45rem;
+            padding:2rem;
+        }
+       .about .row .content h3{
+            font-size: 5rem;
+            color:#fff;
+        }    
+       .about .content h3{
+           font-size: 6rem;
+           text-transform: uppercase;
+           color:#fff;
+        }
+        .info .row{
+            background:#13131a;
+            flex-wrap: wrap;
+            padding: 2rem;
+            font-size: 1.6rem;
+            color:#ccc;
+            padding:1rem 0;
+            line-height: 1.8;
+            text-align: center;
+            
+        }
+        .info .info_img img{
+            border-radius: 70%;
+            width: 100px;     
+        }
+        .info .share a{
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 3rem;
+            color:cyan
+            border: rgba(208, 133, 133, 0.3);
+            margin: 1rem;
+            border-radius: 50%;
+        }
+        .info .share a:hover{
+            background-color: #d3ad7f;
+        }
+        .btn{
+           margin-top: 1rem;
+           display: inline-block;
+           padding:.9rem 3rem;
+           font-size: 1.7rem;
+           color:black;
+           background: cyan;
+           cursor: pointer;
+        }
+        .btn:hover{
+           letter-spacing: .2rem;
+        }
+        .article .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap:1.5rem;
+        }
+       .article .box-container .box{
+            padding:5rem;
+            text-align: center;
+            border:var(--border);    
+        }
+        .article .box-container .box img{
+            height: 10rem;
+        }
+        .article .box-container .box h3{
+            color: black;
+            font-size: 2rem;
+            padding:1rem 0;
+        }
+        .article .box-container .box:hover{
+            background:cyan;
+        }
+        .article .box-container .box:hover > *{
+            color:#13131a;
+        }
+        .article{
+            background:#13131a;
+            flex-wrap: wrap;
+            padding: 2rem;
+            font-size: 1.6rem;
+            color:#ccc;
+            padding:1rem 0;
+            line-height: 1.8;
+        }
+    </style>
+    <body>
+        <section class="info">
+            <div class="row">
+                <div class="info_img">
+                    <img src="my_photo.jpg" alt="my photo">
+                </div>
+                <h1 class="heading">Alaa Hosny Esaa</h1>
+                <p>
+                   <i>Problem solver, Web developer</i><br>
+                   <em>Computers and Information</em><br>
+                   <i>Ismailia , Ersal</i><br>
+                   <i>22 Years old</i><br>
+                   <a href="#article" class="btn">Articles</a>
+                   <a href="#about" class="btn">About me</a>
+                  
+                </p>
+                <div class="share">
+                   <a href="https://web.facebook.com/profile.php?id=100009289257520" class="fab fa-facebook-f"></a>
+                   <a href="https://www.instagram.com/alaa_hosny_512_/" class="fab fa-instagram"></a>
+                   <a href="https://www.linkedin.com/in/alaa-hosny-00a5a920b/" class="fab fa-linkedin"></a>
+                   <a href="https://mail.google.com/mail/u/0/#inbox" class="fa-circle-envelope"></a> 
+                </div>
+            </div>
+       </section>
+       <section class="about" id="about">
+            <div class="row">
+               <div class="image">
+                   <img src="about_img.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>About me</h3>
+                    <p>
+                        Hi 👋,<br>
+                        I’m a frontend developer with less than one year of experience,
+                        I’m passionate about creating technology to elevate people and help new developers to find the right path,
+                        Some technologies I enjoy working with include: HTML5 , CSS3 and Javascript .
+                    </p> 
+                </div>
+             </div>   
+       </section>    
+       <section class="article" id="article">
+                <div class="box-container">
+                    <div class="box">
+                        <div class="image">
+                           <img src="https://mohamedabusrea.com/static/4c41184da2e18270ef2e11cdd241b2b6/e5166/performance-tips-hero.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>إزاي الاداء السيئ بيخسرك فلوس | Performance Tips</h3>
+                            <p>الـ Performance شيء أساسي ومهم خصوصا للشركات اللي بتعتمد على المواقع في تقديم خدماتها فمهم جدا انهم يقدموا تجربة جيدة</p>
+                            <a href="https://mohamedabusrea.com/posts/performance-tips" class="btn">read more</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                           <img src="https://mohamedabusrea.com/static/1604693b27a5d2fb79340399ea7d1d10/e5166/think-like-coder-hero.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>فكِّر مثل المبرمجين</h3>
+                            <p>سلسلة كرتون ممتازة تم إنتاجها بواسطة منظمة TED-Ed وموجهه للأطفال وتعتبر مدخل رائع للبرمجة ... </p>
+                            <a href="https://mohamedabusrea.com/posts/think-like-coder" class="btn">read more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                            <img src="https://cssdeck.com/blog//wp-content/uploads/2016/01/rotate2.png" alt="">
+                        </div>
+                        <div class="content">
+                           <h3>Rotate elements in CSS using turn</h3> 
+                           <p>use turn instead of degrees with css rotate 🤯</p>
+                           <a href="https://mohamedabusrea.com/posts/css-turn-unit" class="btn">read more</a>
+                        </div>
+                    </div>
+                </div>
+        </section>    
+    </body>
+</html>
